@@ -1,18 +1,19 @@
 spring:
   application:
     name: item-service
-server:
-  port: 8001
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
+    
   rabbitmq:
     host: 192.168.41.135
     port: 15672
     username: admin
     password: admin
    
+server:
+  port: 8001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
 ---
 spring:
   profiles: item1
