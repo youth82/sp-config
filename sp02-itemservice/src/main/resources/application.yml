@@ -12,7 +12,7 @@ eureka:
     port: 15672
     username: admin
     password: admin
-    #1
+   
 ---
 spring:
   profiles: item1
