@@ -20,7 +20,11 @@ management:
     web:
       exposure:
         include: hystrix.stream
-        
+  rabbitmq:
+    host: 192.168.41.135
+    port: 15672
+    username: admin
+    password: admin
 ---
 spring:
   profiles: order1
